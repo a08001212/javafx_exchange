@@ -8,7 +8,7 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
 import java.io.IOException;
 
-public class HelloController {
+public class MainUI {
     @FXML
     private ComboBox<String> from;
     @FXML
