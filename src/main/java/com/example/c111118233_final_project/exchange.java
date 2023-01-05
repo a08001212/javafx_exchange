@@ -5,7 +5,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class http {
+public class exchange {
     private final static String api_url= "https://open.er-api.com/v6/latest/";
     public static Double get_exchange_rate(String x, String y)throws IOException, InterruptedException{
         if(x.equals(y))

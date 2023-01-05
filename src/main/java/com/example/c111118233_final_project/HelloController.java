@@ -6,9 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextField;
-
 import java.io.IOException;
-import java.util.stream.Stream;
 
 public class HelloController {
     @FXML
@@ -21,7 +19,7 @@ public class HelloController {
     private TextField output;
     @FXML
     private Hyperlink link;
-    String[] money_name = {"USD", "TWD", "JPY", "CNY", "CAD", "EUR", "HKD", "GBP"};
+    String[] money_name = {"USD", "TWD", "JPY", "HKD", "CNY", "CAD", "EUR", "GBP"};
     public void initialize(){
         from.setItems(FXCollections.observableArrayList(money_name));
         to.setItems(FXCollections.observableArrayList(money_name));
@@ -29,7 +27,7 @@ public class HelloController {
         to.setValue("TWD");
     }
     public void get_ans(ActionEvent event) throws IOException, InterruptedException {
-        Double ans = Double.parseDouble(input.getText()) * http.get_exchange_rate(from.getSelectionModel().getSelectedItem(), to.getSelectionModel().getSelectedItem());
+        Double ans = Double.parseDouble(input.getText()) * exchange.get_exchange_rate(from.getSelectionModel().getSelectedItem(), to.getSelectionModel().getSelectedItem());
         output.setText(String.format("%.2f", ans));
     }
     public void swap(){
@@ -37,8 +35,5 @@ public class HelloController {
         from.setValue(to.getValue());
         to.setValue(temp);
     }
-
-
-
 
 }
