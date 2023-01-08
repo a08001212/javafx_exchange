@@ -18,7 +18,7 @@
       </Label>
       <TextField fx:id="input" layoutX="218.0" layoutY="86.0" />
       <TextField fx:id="output" editable="false" layoutX="218.0" layoutY="192.0" />
-      <Button layoutX="392.0" layoutY="122.0" mnemonicParsing="false" onAction="#get_ans" style="-fx-background-color: skyblue;" text="轉換" />
-      <Button fx:id="swap" layoutX="392.0" layoutY="179.0" mnemonicParsing="false" onAction="#swap" style="-fx-background-color: skyblue;" text="交換" />
+      <Button layoutX="392.0" layoutY="79.0" mnemonicParsing="false" onAction="#get_ans" prefHeight="40.0" prefWidth="55.0" style="-fx-background-color: skyblue;" text="轉換" />
+      <Button fx:id="swap" layoutX="392.0" layoutY="185.0" mnemonicParsing="false" onAction="#swap" prefHeight="40.0" prefWidth="55.0" style="-fx-background-color: skyblue;" text="交換" />
    </children>
 </AnchorPane>
