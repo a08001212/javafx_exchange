@@ -2,4 +2,4 @@
 
 a simple javafx project
 
-https://www.exchangerate-api.com/docs/free
+exchange rate data get from https://www.exchangerate-api.com/docs/free
