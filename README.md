@@ -1,5 +1,5 @@
 # javafx_exchange
 
-a simple javafx project
+A simple javafx project
 
-exchange rate data get from https://www.exchangerate-api.com/docs/free
+Get exchange rate data from https://www.exchangerate-api.com/docs/free
